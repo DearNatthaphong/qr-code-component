@@ -22,58 +22,40 @@
 
     <title>Frontend Mentor | QR code component</title>
 
-    <!-- <link rel="stylesheet" href="./index.css" /> -->
-    <!-- <style>
-      :root {
-        --color-white: hsl(0, 0%, 100%);
-        --color-light-gray: hsl(212, 45%, 89%);
-        --color-grayish-blue: hsl(220, 15%, 55%);
-        --color-dark-blue: hsl(218, 44%, 22%);
-      }
-    </style> -->
-
-    <!-- <script>
+    <!-- tailwindcss  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              white: 'var(--color-white)',
-              'light-gray': 'var(--color-light-gray)',
-              'grayish-blue': 'var(--color-grayish-blue)',
-              'dark-blue': 'var(--color-dark-blue)'
+              white: 'hsl(0, 0%, 100%)',
+              lightGray: 'hsl(212, 45%, 89%)',
+              grayishBlue: 'hsl(220, 15%, 55%)',
+              darkBlue: 'hsl(218, 44%, 22%)'
             }
           }
         }
       };
-    </script> -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
+    </script>
 
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
   </head>
+
   <body
-    class="bg-[#D5E1EF] font-['outfit'] flex flex-col justify-center items-center min-h-screen"
+    class="bg-lightGray font-['outfit'] flex flex-col justify-center items-center min-h-screen"
   >
     <!-- qr-code card  -->
-    <main class="max-w-[375px] bg-white text-center p-4 m-6 rounded-2xl">
+    <main
+      class="max-w-[320px] bg-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-center p-4 m-6 rounded-2xl"
+    >
       <img class="rounded-2xl" src="./images/image-qr-code.png" alt="qr-code" />
-      <h1 class="text-2xl text-[#1F314F] font-[700] pt-3 xl:px-6 xl:pt-6">
+      <h1 class="text-2xl text-darkBlue font-bold pt-3 xl:px-6 xl:pt-6">
         Improve your front-end skills by building projects
       </h1>
-      <p class="text-[#7D889E] p-6 leading-5">
+      <p
+        class="text-grayishBlue text-[15px] p-4 xl:pt-4 xl:px-6 xl:pb-6 leading-5"
+      >
         Scan the QR code to visit Frontend Mentor and take your coding skills to
         the next level
       </p>

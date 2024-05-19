@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    /> -->
+
+    <!-- google font - Outfit  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
+    <!-- <style>
+      :root {
+        --color-white: hsl(0, 0%, 100%);
+        --color-light-gray: hsl(212, 45%, 89%);
+        --color-grayish-blue: hsl(220, 15%, 55%);
+        --color-dark-blue: hsl(218, 44%, 22%);
+      }
+    </style> -->
+
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: 'var(--color-white)',
+              'light-gray': 'var(--color-light-gray)',
+              'grayish-blue': 'var(--color-grayish-blue)',
+              'dark-blue': 'var(--color-dark-blue)'
+            }
+          }
+        }
+      };
+    </script> -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-[#D5E1EF] font-['outfit'] flex flex-col justify-center items-center min-h-screen"
+  >
+    <!-- qr-code card  -->
+    <main class="max-w-[375px] bg-white text-center p-4 m-6 rounded-2xl">
+      <img class="rounded-2xl" src="./images/image-qr-code.png" alt="qr-code" />
+      <h1 class="text-2xl text-[#1F314F] font-[700] pt-3 xl:px-6 xl:pt-6">
+        Improve your front-end skills by building projects
+      </h1>
+      <p class="text-[#7D889E] p-6 leading-5">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </main>
+    <!-- credits  -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Natthaphong Thongphueng</a>.
+    </footer>
+  </body>
+</html>
